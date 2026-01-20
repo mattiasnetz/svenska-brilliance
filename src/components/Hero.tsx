@@ -22,18 +22,17 @@ const Hero = () => {
           <div className="max-w-2xl">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary text-secondary-foreground text-sm font-medium mb-6 animate-fade-in">
               <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-              AI-driven optimering för hälso- och sjukvård
+              AI-baserad kapacitets- och produktionsplanering
             </div>
             
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 animate-fade-in" style={{ animationDelay: "0.1s" }}>
-              Intelligenta tjänster för{" "}
-              <span className="text-gradient">effektivare vård</span>
+              Intelligent planering för{" "}
+              <span className="text-gradient">svenska flygplatser</span>
             </h1>
             
             <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed animate-fade-in" style={{ animationDelay: "0.2s" }}>
-              Svenska Intelligensfabriken utvecklar AI-drivna lösningar för schemaläggning, 
-              prediktion och optimering. Vi hjälper vårdgivare att öka produktionen med upp 
-              till 30% utan extra resurser.
+              Vi tar bort 10–15 timmar planeringsarbete per vecka – utan att ni byter system. 
+              En AI-driven planeringsmotor som förstår roller, kompetenser och variationer.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-in" style={{ animationDelay: "0.3s" }}>
@@ -51,13 +50,13 @@ const Hero = () => {
 
             {/* Trust Indicators */}
             <div className="mt-12 pt-8 border-t border-border/50 animate-fade-in" style={{ animationDelay: "0.4s" }}>
-              <p className="text-sm text-muted-foreground mb-4">Beprövad forskning från</p>
+              <p className="text-sm text-muted-foreground mb-4">Målgrupp och referenskunder</p>
               <div className="flex flex-wrap items-center gap-6">
-                <div className="text-foreground font-medium">Blekinge Tekniska Högskola</div>
+                <div className="text-foreground font-medium">Swedavia</div>
                 <div className="w-px h-6 bg-border hidden sm:block" />
-                <div className="text-foreground font-medium">Karolinska Institutet</div>
+                <div className="text-foreground font-medium">Kommunala flygplatser</div>
                 <div className="w-px h-6 bg-border hidden sm:block" />
-                <div className="text-foreground font-medium">Region Blekinge</div>
+                <div className="text-foreground font-medium">Privata flygplatser</div>
               </div>
             </div>
           </div>
@@ -65,10 +64,10 @@ const Hero = () => {
           {/* Right Content - Stats */}
           <div className="hidden lg:grid grid-cols-2 gap-6">
             {[
-              { value: "30%", label: "Ökad produktion", desc: "utan extra resurser" },
-              { value: "15+", label: "År av forskning", desc: "inom data science" },
-              { value: "10M€", label: "Potentiella intäkter", desc: "årlig marknadspotential" },
-              { value: "24/7", label: "Realtidsuppdatering", desc: "av schemaläggning" },
+              { value: "15h", label: "Tidsbesparing", desc: "per vecka och flygplats" },
+              { value: "500h", label: "Årligt frigjorda", desc: "timmar per enhet" },
+              { value: "30%", label: "Minskad övertid", desc: "för planerare" },
+              { value: "24/7", label: "Realtidsplanering", desc: "automatisk omplanering" },
             ].map((stat, i) => (
               <div 
                 key={i}
