@@ -16,23 +16,23 @@ const IntelligentScheduling = () => {
     },
     {
       icon: Clock,
-      title: "Processhantering",
-      description: "Dela upp processer i delmoment som tilldelas specifika resurser i optimal ordning.",
+      title: "Tre planeringsnivåer",
+      description: "Grundschema (12–18 veckor), Periodplanering (4–6 veckor), Vecka/Dag (ADO-nivå).",
     },
     {
       icon: Shield,
-      title: "Kvalifikationer",
+      title: "Kompetenshantering",
       description: "Säkerställ att rätt kompetens alltid finns tillgänglig med automatisk kvalifikationsövervakning.",
     },
     {
       icon: BarChart,
-      title: "Säsongsvariationer",
-      description: "Förbered dig för toppar och dalar med smart kapacitetsplanering.",
+      title: "Full spårbarhet",
+      description: "Vem har stått var, hur ofta, hur jämnt arbetet fördelas.",
     },
     {
       icon: Calendar,
       title: "Flexibel planering",
-      description: "Reagera snabbt på oförutsedda händelser med flexibel omplanering.",
+      description: "Reagera snabbt på sjukdom, väder och variation med intelligent omplanering.",
     },
   ];
 
@@ -48,8 +48,8 @@ const IntelligentScheduling = () => {
             Intelligent Scheduling
           </h2>
           <p className="text-lg text-accent-foreground/70">
-            Vår unika schemaläggningsmotor tilldelar resurser till processer och delprocesser 
-            på ett sådant sätt att produktionen kan öka med upp till 30% utan extra resurser.
+            Inspirerad av beprövad teknik från flygindustrin. Vår schemaläggningsmotor 
+            genererar färdiga planeringsförslag och lär sig av era justeringar.
           </p>
         </div>
 
@@ -68,32 +68,33 @@ const IntelligentScheduling = () => {
 
             {/* Floating Stats */}
             <div className="absolute -left-4 bottom-8 bg-card text-card-foreground rounded-xl p-4 shadow-elevated animate-float">
-              <div className="text-sm text-muted-foreground mb-1">Aktiva resurser</div>
-              <div className="text-2xl font-display font-bold text-primary">127</div>
+              <div className="text-sm text-muted-foreground mb-1">Tidsbesparing</div>
+              <div className="text-2xl font-display font-bold text-primary">15h/vecka</div>
             </div>
             <div className="absolute -right-4 top-8 bg-card text-card-foreground rounded-xl p-4 shadow-elevated animate-float" style={{ animationDelay: "1s" }}>
-              <div className="text-sm text-muted-foreground mb-1">Processer idag</div>
-              <div className="text-2xl font-display font-bold text-primary">89</div>
+              <div className="text-sm text-muted-foreground mb-1">Minskad övertid</div>
+              <div className="text-2xl font-display font-bold text-primary">-30%</div>
             </div>
           </div>
 
           {/* Right - Content */}
           <div className="order-1 lg:order-2">
             <h3 className="font-display text-2xl md:text-3xl font-bold mb-6">
-              Schemaläggning på operationell nivå
+              Schemaläggning på alla nivåer
             </h3>
             <p className="text-accent-foreground/70 mb-8 leading-relaxed">
-              Intelligent Scheduling innefattar schemaläggning av resurser och processer på 
-              operationell nivå. Processer kan delas upp i delprocesser som bör utföras i en 
-              viss ordning, och vissa processer kan endast utföras av specifika resurser.
+              Vår planeringsmotor arbetar i samma tre nivåer som flygplatser redan har: 
+              grundschema, periodplanering och daglig omplanering (ADO). Den förstår 
+              roller, positioner, kompetenser, tjänstgöringsgrader, regler och beredskap.
             </p>
             <p className="text-accent-foreground/70 mb-8 leading-relaxed">
-              Vårt användarvänliga gränssnitt låter användaren ändra och justera resurser och 
-              processer på ett lätt och smidigt sätt. Tjänsten är även tillgänglig för mobila enheter.
+              Budskapet är enkelt: "Vi tar bort kaoset i planeringen – utan att ni byter system."
             </p>
-            <Button variant="heroLight" size="lg" className="gap-2">
-              Boka en demonstration
-              <ArrowRight className="w-5 h-5" />
+            <Button variant="heroLight" size="lg" className="gap-2" asChild>
+              <a href="#kontakt">
+                Boka en demonstration
+                <ArrowRight className="w-5 h-5" />
+              </a>
             </Button>
           </div>
         </div>

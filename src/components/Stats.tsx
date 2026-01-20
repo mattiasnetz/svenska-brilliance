@@ -1,9 +1,9 @@
 const Stats = () => {
   const stats = [
-    { value: "15+", label: "År av forskning", suffix: "" },
-    { value: "30", label: "Produktionsökning", suffix: "%" },
-    { value: "24/7", label: "Realtidsuppdatering", suffix: "" },
-    { value: "100", label: "Nöjda användare", suffix: "+" },
+    { value: "15", label: "Timmar besparing", suffix: "h/vecka" },
+    { value: "500", label: "Timmar per år", suffix: "+" },
+    { value: "30", label: "Minskad övertid", suffix: "%" },
+    { value: "0,4", label: "Frigjorda tjänster", suffix: " FTE" },
   ];
 
   return (

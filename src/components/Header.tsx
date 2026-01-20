@@ -6,10 +6,10 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navLinks = [
-    { href: "#tjanster", label: "Tjänster" },
-    { href: "#produkter", label: "Produkter" },
+    { href: "#problem", label: "Problemet" },
+    { href: "#losning", label: "Lösning" },
     { href: "#intelligent-scheduling", label: "Kapacitetsstyrning" },
-    { href: "#om-oss", label: "Om oss" },
+    { href: "#go-to-market", label: "Affärsmodell" },
     { href: "#kontakt", label: "Kontakt" },
   ];
 

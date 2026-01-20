@@ -15,27 +15,28 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-accent-foreground/70 max-w-md leading-relaxed">
-              Ett forsknings- och innovationsföretag som utvecklar intelligenta tjänster 
-              för att lösa logistiska problem inom hälso- och sjukvård.
+              AI-baserad kapacitets- och produktionsplanering för svenska flygplatser. 
+              Vi tar bort kaoset i planeringen – utan att ni byter system.
             </p>
           </div>
 
           {/* Links */}
           <div>
-            <h4 className="font-display font-semibold mb-4 text-accent-foreground">Tjänster</h4>
+            <h4 className="font-display font-semibold mb-4 text-accent-foreground">Lösningar</h4>
             <ul className="space-y-2">
-              <li><a href="#tjanster" className="text-accent-foreground/70 hover:text-primary transition-colors">Analysera</a></li>
-              <li><a href="#tjanster" className="text-accent-foreground/70 hover:text-primary transition-colors">Prediktera</a></li>
-              <li><a href="#tjanster" className="text-accent-foreground/70 hover:text-primary transition-colors">Optimera</a></li>
+              <li><a href="#problem" className="text-accent-foreground/70 hover:text-primary transition-colors">Problembilden</a></li>
+              <li><a href="#losning" className="text-accent-foreground/70 hover:text-primary transition-colors">Vår lösning</a></li>
               <li><a href="#intelligent-scheduling" className="text-accent-foreground/70 hover:text-primary transition-colors">Intelligent Scheduling</a></li>
+              <li><a href="#go-to-market" className="text-accent-foreground/70 hover:text-primary transition-colors">Affärsmodell</a></li>
             </ul>
           </div>
 
           <div>
-            <h4 className="font-display font-semibold mb-4 text-accent-foreground">Företag</h4>
+            <h4 className="font-display font-semibold mb-4 text-accent-foreground">Målgrupp</h4>
             <ul className="space-y-2">
-              <li><a href="#om-oss" className="text-accent-foreground/70 hover:text-primary transition-colors">Om oss</a></li>
-              <li><a href="#produkter" className="text-accent-foreground/70 hover:text-primary transition-colors">Produkter</a></li>
+              <li><span className="text-accent-foreground/70">Swedavia</span></li>
+              <li><span className="text-accent-foreground/70">Kommunala flygplatser</span></li>
+              <li><span className="text-accent-foreground/70">Privata flygplatser</span></li>
               <li><a href="#kontakt" className="text-accent-foreground/70 hover:text-primary transition-colors">Kontakt</a></li>
             </ul>
           </div>
