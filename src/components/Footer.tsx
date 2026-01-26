@@ -45,7 +45,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-accent-foreground/10 flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-accent-foreground/50 text-sm">
-            © 2025 Svenska Intelligensfabriken (Sownder). Alla rättigheter förbehållna.
+            © 2025 Svenska Intelligensfabriken. Alla rättigheter förbehållna.
           </p>
           <div className="flex items-center gap-6 text-sm">
             <a href="#" className="text-accent-foreground/50 hover:text-primary transition-colors">Integritetspolicy</a>
