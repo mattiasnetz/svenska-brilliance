@@ -1,12 +1,6 @@
 const Team = () => {
   const team = [
     {
-      name: "Dr Marie Netz",
-      role: "VD & Grundare",
-      description: "15 års forskning inom data science med fokus på logistikprocesser inom flygindustrin.",
-      initials: "MN",
-    },
-    {
       name: "Mattias Netz",
       role: "CTO & Medgrundare",
       description: "Har designat IoT-lösningar i 25 år och varit pionjär inom Maingate.",
@@ -14,15 +8,9 @@ const Team = () => {
     },
     {
       name: "Dr Christian Nordahl",
-      role: "Medicinsk rådgivare",
-      description: "Överläkare och senior forskare på Karolinska Institutet med brett kontaktnät.",
+      role: "Senior rådgivare",
+      description: "Senior forskare med brett kontaktnät inom industrin.",
       initials: "CN",
-    },
-    {
-      name: "Cuong Phung",
-      role: "Senior arkitekt",
-      description: "Civilingenjör med särskilt intresse för matematisk modellering och AI.",
-      initials: "CP",
     },
   ];
 
@@ -45,7 +33,7 @@ const Team = () => {
         </div>
 
         {/* Team Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 gap-8 max-w-2xl mx-auto">
           {team.map((member, i) => (
             <div
               key={i}
