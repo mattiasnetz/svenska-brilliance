@@ -3,23 +3,19 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Mail, Phone, MapPin, Send } from "lucide-react";
 import { useState } from "react";
-
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     company: "",
-    message: "",
+    message: ""
   });
-
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Handle form submission
     console.log("Form submitted:", formData);
   };
-
-  return (
-    <section id="kontakt" className="py-24">
+  return <section id="kontakt" className="py-24">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-16">
           {/* Left - Contact Info */}
@@ -45,9 +41,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <div className="text-sm text-muted-foreground">Telefon</div>
-                  <a href="tel:+46101234567" className="font-medium text-foreground hover:text-primary transition-colors">
-                    010-123 45 67
-                  </a>
+                  <a href="tel:+46101234567" className="font-medium text-foreground hover:text-primary transition-colors">0703-201303</a>
                 </div>
               </div>
               <div className="flex items-center gap-4">
@@ -84,50 +78,38 @@ const Contact = () => {
                   <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
                     Namn
                   </label>
-                  <Input
-                    id="name"
-                    value={formData.name}
-                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    placeholder="Ditt namn"
-                    required
-                  />
+                  <Input id="name" value={formData.name} onChange={e => setFormData({
+                  ...formData,
+                  name: e.target.value
+                })} placeholder="Ditt namn" required />
                 </div>
                 <div>
                   <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">
                     E-post
                   </label>
-                  <Input
-                    id="email"
-                    type="email"
-                    value={formData.email}
-                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    placeholder="din@email.se"
-                    required
-                  />
+                  <Input id="email" type="email" value={formData.email} onChange={e => setFormData({
+                  ...formData,
+                  email: e.target.value
+                })} placeholder="din@email.se" required />
                 </div>
               </div>
               <div>
                 <label htmlFor="company" className="block text-sm font-medium text-foreground mb-2">
                   Flygplats / Organisation
                 </label>
-                <Input
-                  id="company"
-                  value={formData.company}
-                  onChange={(e) => setFormData({ ...formData, company: e.target.value })}
-                  placeholder="Er flygplats eller organisation"
-                />
+                <Input id="company" value={formData.company} onChange={e => setFormData({
+                ...formData,
+                company: e.target.value
+              })} placeholder="Er flygplats eller organisation" />
               </div>
               <div>
                 <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2">
                   Meddelande
                 </label>
-                <Textarea
-                  id="message"
-                  value={formData.message}
-                  onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  placeholder="Berätta om era utmaningar med planering..."
-                  rows={4}
-                />
+                <Textarea id="message" value={formData.message} onChange={e => setFormData({
+                ...formData,
+                message: e.target.value
+              })} placeholder="Berätta om era utmaningar med planering..." rows={4} />
               </div>
               <Button type="submit" variant="hero" size="lg" className="w-full gap-2">
                 Skicka förfrågan
@@ -137,8 +119,6 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Contact;
