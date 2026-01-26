@@ -1,16 +1,16 @@
 const Team = () => {
   const team = [
     {
-      name: "Mattias Netz",
-      role: "CTO & Medgrundare",
-      description: "Har designat IoT-lösningar i 25 år och varit pionjär inom Maingate.",
-      initials: "MN",
+      name: "Dr Christian Nordahl",
+      role: "VD & Medgrundare",
+      description: "Doktorerad inom AI och ansvarig för matematiska modeller och framtagande av optimal planering.",
+      initials: "CN",
     },
     {
-      name: "Dr Christian Nordahl",
-      role: "Senior rådgivare",
-      description: "Senior forskare med brett kontaktnät inom industrin.",
-      initials: "CN",
+      name: "Mattias Netz",
+      role: "PdM & Medgrundare",
+      description: "Omfattande erfarenhet som affärs- och systemarkitekt.",
+      initials: "MN",
     },
   ];
 
