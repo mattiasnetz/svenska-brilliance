@@ -3,7 +3,7 @@ const Team = () => {
     {
       name: "Dr Marie Netz",
       role: "VD & Grundare",
-      description: "15 års forskning inom data science med fokus på logistikprocesser inom hälso-sjukvård.",
+      description: "15 års forskning inom data science med fokus på logistikprocesser inom flygindustrin.",
       initials: "MN",
     },
     {
@@ -39,7 +39,7 @@ const Team = () => {
             <span className="text-gradient">framgång</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            Sownders team har levererat tjänster till industrin och vården under två decennier. 
+            Vårt team har levererat tjänster till industrin och flygsektorn under två decennier. 
             Vi är ett tätt sammansvetsat gäng med alla förutsättningar att lyckas.
           </p>
         </div>
@@ -77,7 +77,7 @@ const Team = () => {
           <p className="text-muted-foreground max-w-2xl mx-auto">
             Svenska Intelligensfabriken har en unik kombinerad uppsättning färdigheter som 
             ser detaljer både i större och mindre perspektiv. Vårt samarbete bygger på 
-            partnerskap med Blekinge Tekniska Högskola och Danderyds sjukhus.
+            partnerskap med Blekinge Tekniska Högskola och erfarenhet från flygplatsdrift.
           </p>
         </div>
       </div>
