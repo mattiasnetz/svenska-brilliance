@@ -1,16 +1,19 @@
+import christianNordahl from "@/assets/christian-nordahl.png";
+import mattiasNetz from "@/assets/mattias-netz.png";
+
 const Team = () => {
   const team = [
     {
       name: "Dr Christian Nordahl",
       role: "VD & Medgrundare",
       description: "Doktorerad inom AI och ansvarig för matematiska modeller och framtagande av optimal planering.",
-      initials: "CN",
+      image: christianNordahl,
     },
     {
       name: "Mattias Netz",
       role: "PdM & Medgrundare",
       description: "Omfattande erfarenhet som affärs- och systemarkitekt.",
-      initials: "MN",
+      image: mattiasNetz,
     },
   ];
 
@@ -39,11 +42,12 @@ const Team = () => {
               key={i}
               className="group bg-card rounded-2xl p-6 shadow-soft hover:shadow-elevated transition-all duration-300 text-center border border-border/50"
             >
-              {/* Avatar */}
-              <div className="w-20 h-20 rounded-full bg-gradient-hero flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
-                <span className="text-2xl font-display font-bold text-primary-foreground">
-                  {member.initials}
-                </span>
+              <div className="w-20 h-20 rounded-full overflow-hidden mx-auto mb-4 group-hover:scale-110 transition-transform">
+                <img 
+                  src={member.image} 
+                  alt={member.name}
+                  className="w-full h-full object-cover"
+                />
               </div>
 
               {/* Info */}
