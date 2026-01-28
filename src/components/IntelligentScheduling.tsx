@@ -13,7 +13,7 @@ const IntelligentScheduling = () => {
   }, {
     icon: Clock,
     title: "Tre planeringsnivåer",
-    description: "Grundschema (12–18 veckor), Periodplanering (4–6 veckor), Vecka/Dag (ADO-nivå)."
+    description: "Grundschema (12–18 veckor), Periodplanering (4–6 veckor), Vecka/Dag."
   }, {
     icon: Shield,
     title: "Kompetenshantering",
