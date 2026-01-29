@@ -1,19 +1,48 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Mail, Phone, MapPin, Send } from "lucide-react";
+import { Mail, Phone, MapPin, Send, Loader2 } from "lucide-react";
 import { useState } from "react";
+import { supabase } from "@/integrations/supabase/client";
+import { useToast } from "@/hooks/use-toast";
+
 const Contact = () => {
+  const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     company: "",
     message: ""
   });
-  const handleSubmit = (e: React.FormEvent) => {
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission
-    console.log("Form submitted:", formData);
+    setIsSubmitting(true);
+
+    try {
+      const { data, error } = await supabase.functions.invoke("send-contact-email", {
+        body: formData,
+      });
+
+      if (error) throw error;
+
+      toast({
+        title: "Tack för din förfrågan!",
+        description: "Vi återkommer så snart som möjligt.",
+      });
+
+      setFormData({ name: "", email: "", company: "", message: "" });
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      toast({
+        title: "Något gick fel",
+        description: "Försök igen eller kontakta oss direkt via telefon.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
   return <section id="kontakt" className="py-24">
       <div className="container mx-auto px-4">
@@ -111,9 +140,18 @@ const Contact = () => {
                 message: e.target.value
               })} placeholder="Berätta om era utmaningar med planering..." rows={4} />
               </div>
-              <Button type="submit" variant="hero" size="lg" className="w-full gap-2">
-                Skicka förfrågan
-                <Send className="w-5 h-5" />
+              <Button type="submit" variant="hero" size="lg" className="w-full gap-2" disabled={isSubmitting}>
+                {isSubmitting ? (
+                  <>
+                    <Loader2 className="w-5 h-5 animate-spin" />
+                    Skickar...
+                  </>
+                ) : (
+                  <>
+                    Skicka förfrågan
+                    <Send className="w-5 h-5" />
+                  </>
+                )}
               </Button>
             </form>
           </div>
