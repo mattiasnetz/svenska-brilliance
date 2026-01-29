@@ -5,9 +5,10 @@ import { Mail, Phone, MapPin, Send, Loader2 } from "lucide-react";
 import { useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
-
 const Contact = () => {
-  const { toast } = useToast();
+  const {
+    toast
+  } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
@@ -15,30 +16,33 @@ const Contact = () => {
     company: "",
     message: ""
   });
-
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-
     try {
-      const { data, error } = await supabase.functions.invoke("send-contact-email", {
-        body: formData,
+      const {
+        data,
+        error
+      } = await supabase.functions.invoke("send-contact-email", {
+        body: formData
       });
-
       if (error) throw error;
-
       toast({
         title: "Tack för din förfrågan!",
-        description: "Vi återkommer så snart som möjligt.",
+        description: "Vi återkommer så snart som möjligt."
       });
-
-      setFormData({ name: "", email: "", company: "", message: "" });
+      setFormData({
+        name: "",
+        email: "",
+        company: "",
+        message: ""
+      });
     } catch (error) {
       console.error("Error submitting form:", error);
       toast({
         title: "Något gick fel",
         description: "Försök igen eller kontakta oss direkt via telefon.",
-        variant: "destructive",
+        variant: "destructive"
       });
     } finally {
       setIsSubmitting(false);
@@ -79,9 +83,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <div className="text-sm text-muted-foreground">E-post</div>
-                  <a href="mailto:kontakt@intelligensfabriken.se" className="font-medium text-foreground hover:text-primary transition-colors">
-                    kontakt@intelligensfabriken.se
-                  </a>
+                  <a href="mailto:kontakt@intelligensfabriken.se" className="font-medium text-foreground hover:text-primary transition-colors">info@svenskaintelligensfabriken.com</a>
                 </div>
               </div>
               <div className="flex items-center gap-4">
@@ -141,17 +143,13 @@ const Contact = () => {
               })} placeholder="Berätta om era utmaningar med planering..." rows={4} />
               </div>
               <Button type="submit" variant="hero" size="lg" className="w-full gap-2" disabled={isSubmitting}>
-                {isSubmitting ? (
-                  <>
+                {isSubmitting ? <>
                     <Loader2 className="w-5 h-5 animate-spin" />
                     Skickar...
-                  </>
-                ) : (
-                  <>
+                  </> : <>
                     Skicka förfrågan
                     <Send className="w-5 h-5" />
-                  </>
-                )}
+                  </>}
               </Button>
             </form>
           </div>
