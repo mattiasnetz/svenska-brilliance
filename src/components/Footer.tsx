@@ -37,7 +37,7 @@ const Footer = () => {
               <li><span className="text-accent-foreground/70">Swedavia</span></li>
               <li><span className="text-accent-foreground/70">Kommunala flygplatser</span></li>
               <li><span className="text-accent-foreground/70">Privata flygplatser</span></li>
-              <li><a href="#kontakt" className="text-accent-foreground/70 hover:text-primary transition-colors">Kontakt</a></li>
+              <li><a href="#om-oss" className="text-accent-foreground/70 hover:text-primary transition-colors">Om oss</a></li>
             </ul>
           </div>
         </div>
