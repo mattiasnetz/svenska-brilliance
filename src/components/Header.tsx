@@ -9,8 +9,8 @@ const Header = () => {
     { href: "#problem", label: "Problemet" },
     { href: "#losning", label: "Lösning" },
     { href: "#intelligent-scheduling", label: "Kapacitetsstyrning" },
-    { href: "#go-to-market", label: "Affärsmodell" },
-    { href: "#kontakt", label: "Kontakt" },
+    { href: "#roi-kalkylator", label: "Affärsmodell" },
+    { href: "#om-oss", label: "Om oss" },
   ];
 
   return (
@@ -41,12 +41,6 @@ const Header = () => {
             ))}
           </div>
 
-          {/* CTA Button */}
-          <div className="hidden lg:flex items-center gap-4">
-            <Button variant="hero" size="lg" asChild>
-              <a href="#kontakt">Boka demo</a>
-            </Button>
-          </div>
 
           {/* Mobile Menu Button */}
           <button
@@ -72,9 +66,6 @@ const Header = () => {
                   {link.label}
                 </a>
               ))}
-              <Button variant="hero" size="lg" asChild className="mt-2">
-                <a href="#kontakt">Boka demo</a>
-              </Button>
             </div>
           </div>
         )}
