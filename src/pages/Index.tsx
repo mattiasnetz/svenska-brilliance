@@ -6,7 +6,6 @@ import IntelligentScheduling from "@/components/IntelligentScheduling";
 import ROICalculator from "@/components/ROICalculator";
 import Stats from "@/components/Stats";
 import Team from "@/components/Team";
-import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -21,7 +20,6 @@ const Index = () => {
         <ROICalculator />
         <Stats />
         <Team />
-        <Contact />
       </main>
       <Footer />
     </div>
