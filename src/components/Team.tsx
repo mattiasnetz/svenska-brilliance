@@ -1,5 +1,4 @@
 import christianNordahl from "@/assets/christian-nordahl.png";
-import mattiasNetz from "@/assets/mattias-netz.png";
 
 const Team = () => {
   const team = [
@@ -8,12 +7,6 @@ const Team = () => {
       role: "VD & Medgrundare",
       description: "Doktorerad inom AI och ansvarig för matematiska modeller och framtagande av optimal planering.",
       image: christianNordahl,
-    },
-    {
-      name: "Mattias Netz",
-      role: "PdM & Medgrundare",
-      description: "Omfattande erfarenhet som affärs- och systemarkitekt.",
-      image: mattiasNetz,
     },
   ];
 
@@ -36,7 +29,7 @@ const Team = () => {
         </div>
 
         {/* Team Grid */}
-        <div className="grid md:grid-cols-2 gap-8 max-w-2xl mx-auto">
+        <div className="grid md:grid-cols-1 gap-8 max-w-sm mx-auto">
           {team.map((member, i) => (
             <div
               key={i}
