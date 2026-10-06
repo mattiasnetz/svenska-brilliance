@@ -6,11 +6,11 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navLinks = [
-    { href: "#problem", label: "Problemet" },
-    { href: "#losning", label: "Lösning" },
-    { href: "#intelligent-scheduling", label: "Kapacitetsstyrning" },
-    { href: "#roi-kalkylator", label: "Affärsmodell" },
-    { href: "#om-oss", label: "Om oss" },
+    { href: "/#problem", label: "Problemet" },
+    { href: "/#losning", label: "Lösning" },
+    { href: "/#intelligent-scheduling", label: "Kapacitetsstyrning" },
+    { href: "/#roi-kalkylator", label: "Affärsmodell" },
+    { href: "/#om-oss", label: "Om oss" },
   ];
 
   return (
@@ -18,7 +18,7 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4">
         <nav className="flex items-center justify-between">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-3">
+          <a href="/" className="flex items-center gap-3">
             <div className="w-10 h-10 rounded-lg bg-gradient-hero flex items-center justify-center">
               <span className="text-primary-foreground font-display font-bold text-lg">SI</span>
             </div>

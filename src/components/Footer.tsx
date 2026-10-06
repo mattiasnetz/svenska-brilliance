@@ -24,10 +24,10 @@ const Footer = () => {
           <div>
             <h4 className="font-display font-semibold mb-4 text-accent-foreground">Lösningar</h4>
             <ul className="space-y-2">
-              <li><a href="#problem" className="text-accent-foreground/70 hover:text-primary transition-colors">Problembilden</a></li>
-              <li><a href="#losning" className="text-accent-foreground/70 hover:text-primary transition-colors">Vår lösning</a></li>
-              <li><a href="#intelligent-scheduling" className="text-accent-foreground/70 hover:text-primary transition-colors">Intelligent Scheduling</a></li>
-              <li><a href="#go-to-market" className="text-accent-foreground/70 hover:text-primary transition-colors">Affärsmodell</a></li>
+              <li><a href="/#problem" className="text-accent-foreground/70 hover:text-primary transition-colors">Problembilden</a></li>
+              <li><a href="/#losning" className="text-accent-foreground/70 hover:text-primary transition-colors">Vår lösning</a></li>
+              <li><a href="/#intelligent-scheduling" className="text-accent-foreground/70 hover:text-primary transition-colors">Intelligent Scheduling</a></li>
+              <li><a href="/#roi-kalkylator" className="text-accent-foreground/70 hover:text-primary transition-colors">Affärsmodell</a></li>
             </ul>
           </div>
 
@@ -37,7 +37,7 @@ const Footer = () => {
               <li><span className="text-accent-foreground/70">Swedavia</span></li>
               <li><span className="text-accent-foreground/70">Kommunala flygplatser</span></li>
               <li><span className="text-accent-foreground/70">Privata flygplatser</span></li>
-              <li><a href="#om-oss" className="text-accent-foreground/70 hover:text-primary transition-colors">Om oss</a></li>
+              <li><a href="/#om-oss" className="text-accent-foreground/70 hover:text-primary transition-colors">Om oss</a></li>
             </ul>
           </div>
         </div>
