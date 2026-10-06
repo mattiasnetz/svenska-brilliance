@@ -22,17 +22,17 @@ const Hero = () => {
           <div className="max-w-2xl">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary text-secondary-foreground text-sm font-medium mb-6 animate-fade-in">
               <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-              AI-baserad kapacitets- och produktionsplanering
+              Svenska Intelligensfabriken – AI-baserad bemanningsplanering
             </div>
             
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 animate-fade-in" style={{ animationDelay: "0.1s" }}>
-              Intelligent planering för{" "}
+              AI-baserad personalplanering för{" "}
               <span className="text-gradient">svenska flygplatser</span>
             </h1>
             
             <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed animate-fade-in" style={{ animationDelay: "0.2s" }}>
-              Vi tar bort 10–15 timmar planeringsarbete per vecka – utan att ni byter system. 
-              En AI-driven planeringsmotor som förstår roller, kompetenser och variationer.
+              Svenska Intelligensfabriken tar bort 10–15 timmar planeringsarbete per vecka – utan att ni byter system.
+              Smart schemaläggning, bemanningsplanering och kapacitetsplanering som förstår roller, kompetenser och variationer.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-in" style={{ animationDelay: "0.3s" }}>
