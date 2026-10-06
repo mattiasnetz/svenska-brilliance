@@ -31,6 +31,7 @@ const Footer = () => {
               <li><a href="/#losning" className="text-accent-foreground/70 hover:text-primary transition-colors">Vår lösning</a></li>
               <li><a href="/#intelligent-scheduling" className="text-accent-foreground/70 hover:text-primary transition-colors">Intelligent Scheduling</a></li>
               <li><a href="/#roi-kalkylator" className="text-accent-foreground/70 hover:text-primary transition-colors">Affärsmodell</a></li>
+              {seoLinks.map((l) => (<li key={l.to}><Link to={l.to} className="text-accent-foreground/70 hover:text-primary transition-colors">{l.label}</Link></li>))}
             </ul>
           </div>
 
