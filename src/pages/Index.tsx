@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Services from "@/components/Services";
@@ -11,6 +12,10 @@ import Footer from "@/components/Footer";
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>AI-baserad bemanningsplanering för flygplatser | Svenska Intelligensfabriken</title>
+        <link rel="canonical" href="https://swefab.lovable.app/" />
+      </Helmet>
       <Header />
       <main>
         <Hero />

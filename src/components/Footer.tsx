@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom";
+import { seoLinks } from "@/components/SeoPage";
+
 const Footer = () => {
   return (
     <footer className="bg-accent text-accent-foreground py-16">
