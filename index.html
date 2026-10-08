@@ -21,12 +21,36 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Svenska Intelligensfabriken",
-        "alternateName": "Intelligensfabriken",
-        "url": "https://swefab.lovable.app/",
-        "logo": "https://swefab.lovable.app/favicon.png",
-        "description": "AI-baserad kapacitets- och produktionsplanering för svenska flygplatser."
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://swefab.lovable.app/#organization",
+            "name": "Svenska Intelligensfabriken",
+            "alternateName": ["Intelligensfabriken", "Svenska Intelligens Fabriken", "Swefab", "SI Intelligensfabriken", "Swedish Intelligence Factory"],
+            "url": "https://swefab.lovable.app/",
+            "logo": "https://swefab.lovable.app/favicon.png",
+            "description": "Svenska Intelligensfabriken utvecklar AI-baserad bemanningsplanering, schemaläggning och kapacitetsplanering för svenska flygplatser.",
+            "areaServed": { "@type": "Country", "name": "Sverige" },
+            "knowsAbout": ["Bemanningsplanering", "Personalplanering", "Schemaläggning", "Kapacitetsplanering", "Produktionsplanering", "Artificiell intelligens", "Flygplatsdrift"],
+            "founder": { "@type": "Person", "name": "Christian Nordahl", "jobTitle": "VD & Medgrundare" }
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://swefab.lovable.app/#website",
+            "name": "Svenska Intelligensfabriken",
+            "url": "https://swefab.lovable.app/",
+            "inLanguage": "sv-SE",
+            "publisher": { "@id": "https://swefab.lovable.app/#organization" }
+          },
+          {
+            "@type": "Service",
+            "name": "AI-baserad bemanningsplanering för flygplatser",
+            "serviceType": "Bemannings-, schemaläggnings- och kapacitetsplanering",
+            "provider": { "@id": "https://swefab.lovable.app/#organization" },
+            "areaServed": { "@type": "Country", "name": "Sverige" },
+            "audience": { "@type": "Audience", "audienceType": "Svenska flygplatser" }
+          }
+        ]
       }
     </script>
   </head>
